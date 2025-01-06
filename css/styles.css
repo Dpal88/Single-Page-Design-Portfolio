@@ -10,6 +10,7 @@
     --medium-pink: hsla(0, 79%, 79%, 1);
     --medium-purple: hsla(314, 46%, 23%, 1);
     --black: hsla(0, 0%, 1%, 1);
+    --white: hsla(0, 0%, 100%, 1);
 }
 
 /*-------- FONTS --------*/
@@ -111,6 +112,72 @@ body {
     line-height: 1.625rem; /* 162.5% */
 }
 
+/*-------- SKILLS --------*/
+.skills {
+    display: grid;
+    grid-template-rows: 22.75rem 11.375rem 9.875rem 11.375rem 11.375rem;
+    grid-template-areas: 
+    "design design"
+    "ui apps"
+    "illustrations illustrations"
+    "photography photography"
+    "motion motion"
+    ;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--galactic-blue);
+
+    .skills__img-wrapper {
+        align-self: flex-end;
+    }
+    .skills__text {
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+    }
+}
+
+.skills__design {
+    background: var(--galactic-blue);
+    grid-area: design;
+
+    .skills__text {
+        margin-top: 5rem;
+    }
+}
+
+.skills__ui {
+    background: var(--summer-yellow);
+    grid-area: ui;
+}
+
+.skills__apps {
+    background: var(--medium-pink);
+    grid-area: apps;
+}
+
+.skills__illustrations {
+    background: var(--light-red);
+    grid-area: illustrations;
+}
+
+.skills__photography {
+    background: var(--cyan);
+    grid-area: photography;
+}
+
+.skills__motion {
+    background: var(--medium-purple);
+    grid-area: motion;
+}
 
 /*------- media queries -------*/
 
@@ -129,6 +196,16 @@ body {
         font-size: 1.125rem;
         line-height: 1.75rem; /* 155.556% */
     }
+
+    /*-------- SKILLS --------*/
+    .skills {
+        grid-template-rows: 11.375rem 9.875rem 11.375rem;
+        grid-template-areas: 
+        "design design ui apps"
+        "design design illustrations illustrations"
+        "photography photography motion motion"
+        ;
+    }
 }
 
  /* 1280px = 80rem */
@@ -142,6 +219,15 @@ body {
     }
     .main__intro-text {
         max-width: 80%;
+    }
+
+    /*-------- SKILLS --------*/
+    .skills {
+        grid-template-rows: 11.375rem 9.875rem;
+        grid-template-areas: 
+        "design design ui apps photography photography"
+        "design design illustrations illustrations motion motion"
+        ;
     }
 
 }
