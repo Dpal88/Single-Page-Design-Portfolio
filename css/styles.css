@@ -70,15 +70,20 @@ body {
 .just-between {
     justify-content: space-between;
 }
-
-
-.header__img {
-    width: 3rem;
-    height: 3rem;
+.h2 {
+    font-size: 1.625rem;
+    font-weight: 700;
 }
-.header__link {
-    color: var(--light-cream);
-    background: var(--black);
+.h2--small {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.para {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem; /* 162.5% */
+}
+.anchor {
     width: 11rem;
     height: 2.75rem;
     display: flex;
@@ -93,6 +98,16 @@ body {
 }
 
 
+.header__img {
+    width: 3rem;
+    height: 3rem;
+}
+.header__link {
+    color: var(--light-cream);
+    background: var(--black);
+}
+
+
 .main__header {
     max-width: 47rem;
     margin-top: 1.5rem;
@@ -104,12 +119,10 @@ body {
     font-weight: 700;
 }
 .main__intro-text {
+    color: var(--medium-brown);
     max-width: 80%;
     margin-top: 1rem;
     margin: 1rem auto 0;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.625rem; /* 162.5% */
 }
 
 /*-------- SKILLS --------*/
@@ -179,6 +192,43 @@ body {
     grid-area: motion;
 }
 
+
+/*-------- ABOUT --------*/
+.about {
+    margin-top: 6.25rem;
+    display: grid;
+    gap: 2.5rem;
+}
+.about__img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about__img {
+    width: 100%;
+    max-width: 18.75rem;
+    max-height: 18.75rem;
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    /* margin-top: 2.5rem; */
+
+    .about__h2 {
+        color: var(--black);
+    }
+    .about__para {
+        color: var(--medium-brown);
+    }
+
+    .about__anchor {
+        color: var(--light-cream);
+        background: var(--light-red);
+    }
+}
+
 /*------- media queries -------*/
 
 /* 768px = 48rem */
@@ -206,6 +256,36 @@ body {
         "photography photography motion motion"
         ;
     }
+
+    /*-------- ABOUT --------*/
+    .about {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about__img {
+        max-width: 22.75rem;
+        max-height: 22.75rem;
+    }
+    .about__text {
+        max-width: 21.1875rem;
+        max-height: 22.75rem;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    /*-------- BOCK --------*/
+    .h2,
+    .h2--small {
+        font-size: 2rem;
+    }
+    .para {
+        font-size: 1.125rem;
+        line-height: 1.75rem; /* 155.556% */
+    }
+    .anchor {
+        width: 14.25rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
 }
 
  /* 1280px = 80rem */
@@ -228,6 +308,20 @@ body {
         "design design ui apps photography photography"
         "design design illustrations illustrations motion motion"
         ;
+    }
+
+
+    /*-------- ABOUT --------*/
+
+    .about__img {
+        max-width: 27.8125rem;
+        max-height: 27.8125rem;
+    }
+    .about__text {
+        align-self: center;
+        gap: 2rem;
+        max-width: 33.75rem;
+        max-height: 19.125rem;
     }
 
 }
