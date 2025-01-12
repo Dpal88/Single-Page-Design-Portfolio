@@ -274,7 +274,7 @@ body {
 .carousel {
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    /* justify-content: center; */
     /* grid-auto-columns: calc((100%) - 12px); */
     gap: 1rem;
     /* max-width: 1660px; */
@@ -290,6 +290,11 @@ body {
     height: 100%;
     border-radius: 0.625rem;
     /* object-fit: cover; */
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
 }
 
 /*------- media queries -------*/
