@@ -229,6 +229,69 @@ body {
     }
 }
 
+
+/*-------- WORK --------*/
+.work {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.work__heading {
+    text-align: center;
+}
+/* .work__images-container {
+    display: flex;
+    overflow: hidden;
+} */
+.work__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.btn {
+    background: var(--black);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+}
+.btn__img {
+    /* width: 2rem;
+    height: 2rem; */
+}
+
+/*-------- CAROUSEL --------*/
+.carousel-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    max-width: 1660px;
+    width: 100%;
+}
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    /* grid-auto-columns: calc((100%) - 12px); */
+    gap: 1rem;
+    /* max-width: 1660px; */
+    overflow: hidden;
+}
+.card {
+    width: 16.875rem;
+    height: 11.25rem;
+    list-style: none;
+}
+.card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+    /* object-fit: cover; */
+}
+
 /*------- media queries -------*/
 
 /* 768px = 48rem */
@@ -270,6 +333,12 @@ body {
         max-height: 22.75rem;
         align-items: flex-start;
         text-align: start;
+    }
+
+    /*-------- CAROUSEL --------*/
+    .card {
+        width: 33.75rem;
+        height: 22.5rem;
     }
 
     /*-------- BOCK --------*/
@@ -325,3 +394,5 @@ body {
     }
 
 }
+
+/* remove flex classes? or keep */
