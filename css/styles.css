@@ -240,6 +240,7 @@ body {
     margin-top: 5rem;
 }
 .work__heading {
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -250,8 +251,8 @@ body {
 }
 .btn {
     background: var(--black);
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,6 +304,29 @@ body {
     user-select: none;
 }
 
+
+/*------- CONTACT -------*/
+.contact {
+    color: var(--light-cream);
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    padding: 3rem 1.5rem;
+    border-radius: 0.625rem;
+}
+.contact__para {
+    margin-top: 1.5rem;
+}
+.contact__anchor {
+    color: var(--light-cream);
+    background: var(--light-red);
+}
+
+
 /*------- media queries -------*/
 
 /* 768px = 48rem */
@@ -346,7 +370,10 @@ body {
         text-align: start;
     }
 
-    /*-------- CAROUSEL --------*/
+    /*-------- WORK / CAROUSEL --------*/
+    .work__heading {
+        font-size: 2rem;
+    }
     .card {
         width: 33.75rem;
         height: 22.5rem;
@@ -404,7 +431,10 @@ body {
 
 
     /*-------- ABOUT --------*/
-
+    .about__anchor {
+        max-height: 3.5rem;
+        height: 100%;
+    }
     .about__img {
         max-width: 27.8125rem;
         max-height: 27.8125rem;
@@ -416,12 +446,28 @@ body {
         max-height: 19.125rem;
     }
 
-    /*-------- CAROUSEL --------*/
+    /*-------- WORK / CAROUSEL --------*/
     .carousel-wrapper {
         max-width: 1660px;
     }
     .carousel {
         grid-auto-columns: calc((100% / 3) - 12px);
+    }
+
+    /*------- CONTACT -------*/
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 4rem;
+        text-align: start;
+    }
+    .contact__text-wrapper {
+        max-width: 33.75rem;
+    }
+
+    /*------- BLOCKS -------*/
+    .h2 {
+        font-size: 2.5rem;
     }
 
 }
