@@ -326,6 +326,22 @@ body {
     background: var(--light-red);
 }
 
+/*------- FOOTER -------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.footer__img {
+    width: 3rem;
+    height: 3rem;
+}
+.footer__anchor {
+    color: var(--light-cream);
+    background: var(--black);
+}
+
 
 /*------- media queries -------*/
 
