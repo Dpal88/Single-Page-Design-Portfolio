@@ -54,20 +54,6 @@ button {
 
 /*-------- BLOCK --------*/
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-.align-center {
-    align-items: center;
-}
-.just-between {
-    justify-content: space-between;
-}
 .h2 {
     font-size: 1.625rem;
     font-weight: 700;
@@ -100,6 +86,9 @@ button {
 
 /*-------- NAV HEADER --------*/
 .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 1rem;
 }
 .header__img {
