@@ -1,6 +1,6 @@
 const carousel = document.querySelector('.carousel');
 const arrowBtns = document.querySelectorAll('.arrowBtn');
-let firstCardWidth = carousel.querySelector('.card').offsetWidth;
+const firstCardWidth = carousel.querySelector('.card').offsetWidth;
 // array of carousel children (which are li elements)
 const carouselChildren = [...carousel.children];
 

@@ -11,72 +11,75 @@
 </head>
 <body>
 
-  <header class="flex-row align-center just-between">
+  <header class="nav-header flex-row align-center just-between">
     <a href="#"><img class="header__img" src="assets/logo.svg" alt="logo"></a>
     <a class="header__link anchor" href="#">Free Consultation</a>
   </header>
 
   <main>
 
-    <!-- add header into skills section? -->
-    <header class="main__header">
-      <h1 class="main__heading">Design solutions made easy</h1>
-      <p class="main__intro-text para">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-    </header>
+    <section class="skills" aria-labelledby="skills-title">
 
-    <section class="skills">
+      <header class="skills__header">
+        <h1  id="skills-title" class="skills__heading">Design solutions made easy</h1>
+        <p class="skills__intro-text para">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+      </header>
 
-      <div class="skills__container skills__design">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-graphic-design.svg" alt="abstract design">
+      <div class="skills__wrapper">
+
+        <div class="skills__container skills__design">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-graphic-design.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">Graphic Design</p>
         </div>
-        <p class="skills__text">Graphic Design</p>
-      </div>
 
-      <div class="skills__container skills__ui">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-ui-ux.svg" alt="abstract design">
+        <div class="skills__container skills__ui">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-ui-ux.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">UI/UX</p>
         </div>
-        <p class="skills__text">UI/UX</p>
-      </div>
 
-      <div class="skills__container skills__apps">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-apps.svg" alt="abstract design">
+        <div class="skills__container skills__apps">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-apps.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">Apps</p>
         </div>
-        <p class="skills__text">Apps</p>
-      </div>
 
-      <div class="skills__container skills__illustrations">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-illustrations.svg" alt="abstract design">
+        <div class="skills__container skills__illustrations">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-illustrations.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">Illustrations</p>
         </div>
-        <p class="skills__text">Illustrations</p>
-      </div>
 
-      <div class="skills__container skills__photography">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-photography.svg" alt="abstract design">
+        <div class="skills__container skills__photography">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-photography.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">Photography</p>
         </div>
-        <p class="skills__text">Photography</p>
-      </div>
 
-      <div class="skills__container skills__motion">
-        <div class="skills__img-wrapper">
-          <img src="assets/pattern-motion-graphics.svg" alt="abstract design">
+        <div class="skills__container skills__motion">
+          <div class="skills__img-wrapper">
+            <img src="assets/pattern-motion-graphics.svg" alt="abstract design">
+          </div>
+          <p class="skills__text">Motion Graphics</p>
         </div>
-        <p class="skills__text">Motion Graphics</p>
+
       </div>
 
     </section>
 
-    <section class="about">
+    <section aria-labelledby="about-title" class="about">
 
       <div class="about__img-wrapper">
         <img class="about__img" src="assets/image-amy.webp" alt="abstract design">
       </div>
       <div class="about__text">
-        <h2 class="about__h2 h2">I’m Amy, and I’d love to work on your next project</h2>
+        <h2 id="about-title" class="about__h2 h2">I’m Amy, and I’d love to work on your next project</h2>
         <p class="about__para para">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
           to complete mobile apps. I’m also handy with a camera!</p>
         <a class="about__anchor anchor" href="#">Free Consultation</a>
@@ -84,9 +87,9 @@
 
     </section>
 
-    <section class="work">
+    <section aria-labelledby="work-title" class="work">
 
-      <h2 class="work__heading">My Work</h2>
+      <h2 id="work-title" class="work__heading">My Work</h2>
 
       <div class="work__images-container carousel-wrapper">
         <ul class="carousel">
