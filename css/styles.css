@@ -79,10 +79,13 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 1.75rem; /* 200% */
+
+    transition: all .3s ease-in-out;
 }
 .margin {
     margin: 0 1rem;
 }
+
 
 /*-------- NAV HEADER --------*/
 .nav-header {
@@ -250,6 +253,8 @@ button {
     justify-content: center;
     border: none;
     border-radius: 50%;
+
+    transition: background .3s ease-in-out;
 }
 
 .carousel-wrapper {
@@ -523,5 +528,12 @@ button {
 
 }
 
+/*------- ACTIVE -------*/
 
-/* remove flex classes? or keep */
+.hover-bg-blue:hover {
+    background: var(--galactic-blue);
+}
+.hover-bg-yellow:hover {
+    color: var(--black);
+    background: var(--summer-yellow);
+}
