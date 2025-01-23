@@ -63,6 +63,7 @@ const infiniteScroll = () => {
     if (carousel.scrollLeft === 0) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.scrollWidth - ( 2 * carousel.offsetWidth );
+        console.log(carousel.scrollLeft);
         carousel.classList.remove("no-transition");
 
         // If the carousel is at the end, scroll to the beginning
@@ -74,6 +75,7 @@ const infiniteScroll = () => {
 
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
+        console.log(carousel.scrollLeft);
         carousel.classList.remove("no-transition");
     }
 }

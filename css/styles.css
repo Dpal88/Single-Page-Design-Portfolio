@@ -227,6 +227,7 @@ button {
 /*-------- WORK / CAROUSEL --------*/
 .work {
     display: grid;
+    justify-items: center;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -490,7 +491,8 @@ button {
         align-self: center;
         gap: 2rem;
         max-width: 33.75rem;
-        max-height: 19.125rem;
+        max-height: 24rem;
+        height: 100%;
     }
 
     /*-------- WORK / CAROUSEL --------*/
@@ -527,6 +529,17 @@ button {
     }
 
 }
+
+/* 1326px = 82.875rem */
+
+@media (width >= 82.875rem) {
+
+    /*-------- ABOUT --------*/
+    .about__text {
+        max-height: 19.125rem;
+    }
+}
+
 
 /*------- ACTIVE -------*/
 
